@@ -487,6 +487,7 @@ summary {
 <h2>Imputing missing values</h2>
 <pre class="r"><code>paste(&#39;There are&#39;,sum(is.na(data)), &#39;missing values&#39;)</code></pre>
 <pre><code>## [1] &quot;There are 2304 missing values&quot;</code></pre>
+<p>The strategy is replace the nas value for the average of their corresponding interval( i.e if the interval for Na is 5 then this is replace for the mean of interval 5)</p>
 <pre class="r"><code>data_2=data
 data_interval&lt;-data %&gt;% 
     na.omit %&gt;% 

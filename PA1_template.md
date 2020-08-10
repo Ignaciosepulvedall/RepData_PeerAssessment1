@@ -131,6 +131,7 @@ paste('There are',sum(is.na(data)), 'missing values')
 ```
 ## [1] "There are 2304 missing values"
 ```
+The strategy is replace the nas value for the average of their corresponding interval( i.e if the interval for Na is 5 then this is replace for the mean of interval 5)
 
 ```r
 data_2=data

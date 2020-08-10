@@ -67,6 +67,7 @@ data_interval %>% summarise(interval=interval[which.max(Mean)]) %>% knitr::kable
 ```{r Total Nas}
 paste('There are',sum(is.na(data)), 'missing values')
 ```
+The strategy is replace the nas value for the average of their corresponding interval( i.e if the interval for Na is 5 then this is replace for the mean of interval 5)
 ```{r Replace Nas}
 data_2=data
 data_interval<-data %>% 
